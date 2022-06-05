@@ -9,8 +9,9 @@ import { transformPlayerData } from '../data/utils';
 
 function Index() {
   const [players, setPlayers] = useState<CardProps[] | null>(null);
+  const [search, setSearch] = useState(null);
   const { data, error, loading } = useFakeQuery('SelectCatPlayers', {
-    variables: { search: null }
+    variables: { search }
   });
 
   useEffect(() => {
@@ -26,7 +27,7 @@ function Index() {
   return (
     <main className='main-content'>
       <h1 className='title main-title'>Recent Activity</h1>
-      <Searcher />
+      <Searcher onSearch={setSearch} />
       {loading ? <Loader /> : (
         players?.length ? (
           <section className='card-container'>

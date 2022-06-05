@@ -24,3 +24,19 @@ export const transformPlayerData = (data: Player[]) : CardProps[] => {
 
   return response;
 }
+
+/**
+ * @description based in https://codepen.io/adeelibr/pen/LYNPYmb
+ * @param callback {function}
+ * @param wait {number}
+**/
+export function debounce(callback, wait) {
+  let timerId;
+  return (...args) => {
+    clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      callback(...args);
+    }, wait);
+  };
+}
+
