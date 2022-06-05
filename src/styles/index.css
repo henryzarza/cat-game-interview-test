@@ -1,0 +1,20 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "./font.css";
+@import "./typography.css";
+
+* {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--wild-sand);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}

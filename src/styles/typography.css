@@ -1,0 +1,48 @@
+.title {
+  color: var(--black);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.small-title {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.base-text {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.small-text {
+  color: var(--cod-gray);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-thin {
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: var(--white);
+}

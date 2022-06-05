@@ -1,0 +1,17 @@
+:root {
+  --content-width: 75rem;
+  --transition-duration: 290ms;
+  --transition-function: cubic-bezier(0.79, 0.01, 0.38, 0.99);
+
+  /* Colors */
+  --alizarin-crimson: #EB2323;
+  --black: #000;
+  --bright-gray: #3A434D;
+  --green-haze: #00B32A;
+  --havelock-blue: #4192DC;
+  --mercury: #E5E5E5;
+  --ripe-lemon: #F3C41E;
+  --silver: #C2C2C2;
+  --wild-sand: #F5F5F5;
+  --white: #FFF;
+}
