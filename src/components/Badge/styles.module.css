@@ -1,0 +1,26 @@
+.badge {
+  align-items: center;
+  background-color: var(--green-haze);
+  border-radius: 50%;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+}
+
+.green {
+  background-color: var(--green-haze);
+}
+
+.red {
+  background-color: var(--alizarin-crimson);
+}
+
+.blue {
+  background-color: var(--havelock-blue);
+}
+
+.yellow {
+  background-color: var(--ripe-lemon);
+}

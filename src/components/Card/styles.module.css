@@ -1,0 +1,41 @@
+.card {
+  background-color: var(--wild-sand);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.card-image {
+  height: 100px;
+  object-fit: cover;
+  object-position: center center;
+  width: 100px;
+}
+.card-content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.text-margin {
+  margin-bottom: 8px;
+}
+
+.badge {
+  align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    gap: 37px;
+    padding: 16px 12px;
+  }
+
+  .badge {
+    left: 88px;
+    position: absolute;
+  }
+}

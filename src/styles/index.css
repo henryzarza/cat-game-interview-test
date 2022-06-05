@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: var(--wild-sand);
+  background-color: var(--white);
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,6 +18,33 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: var(--content-width);
+  max-width: calc(var(--content-width) + 32px);
+  padding: 60px 16px 27px;
   width: 100%;
+}
+
+.main-title {
+  margin-bottom: 48px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* sadly custom properties doesn't work in media queries
+https://bholmes.dev/blog/alternative-to-css-variable-media-queries/ */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding-top: 31px;
+  }
+
+  .main-title {
+    margin-bottom: 24px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }

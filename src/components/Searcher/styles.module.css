@@ -1,0 +1,49 @@
+.container {
+  height: 48px;
+  margin-bottom: 48px;
+  position: relative;
+  width: 100%;
+}
+
+.container > input {
+  border: 1px solid var(--silver);
+  height: 100%;
+  line-height: 24px;
+  padding: 12px 34px 12px 12px;
+  transition: border-color var(--transition-duration) var(--transition-function);
+  width: 100%;
+}
+
+.container > input:focus {
+  border-color: var(--havelock-blue);
+}
+
+.container > input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--bright-gray);
+  font-family: 'Manrope', 'Roboto', sans-serif;
+  opacity: 1; /* Firefox */
+}
+
+.container > input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--bright-gray);
+  font-family: 'Manrope', 'Roboto', sans-serif;
+}
+
+.container > input::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--bright-gray);
+  font-family: 'Manrope', 'Roboto', sans-serif;
+}
+
+.icon {
+  height: 22px;
+  position: absolute;
+  top: 12.75px;
+  right: 12.75px;
+  width: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-bottom: 24px;
+  }
+}
