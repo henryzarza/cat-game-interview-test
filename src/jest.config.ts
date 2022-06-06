@@ -2,12 +2,12 @@ import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
   verbose: true,
-  moduleFileExtensions: ["ts", "tsx"],
+  moduleFileExtensions: ['ts', 'tsx'],
   collectCoverage: true,
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
   testTimeout: 30000,
   setupFiles: [
-    "@testing-library/react/dont-cleanup-after-each"
+    '@testing-library/react/dont-cleanup-after-each'
   ],
   setupFilesAfterEnv: ['./setupTests.ts'],
   coverageThreshold: {

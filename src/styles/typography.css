@@ -31,10 +31,6 @@
   font-weight: 400;
 }
 
-.fw-thin {
-  font-weight: 300;
-}
-
 .text-white {
   color: var(--white);
 }
